@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools" android:layout_height="match_parent" android:layout_width="match_parent">
+    <!--    <data>-->
+    <!--        <variable name="profileVM" type="com.chinmaysapplication.app.modules.profile.data.viewmodel.ProfileVM"/>-->
+    <!--    </data>-->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout android:gravity="start"
+            android:id="@+id/linearProfile"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="vertical" style="@style/groupStylewhite_A700">
+            <FrameLayout android:id="@+id/frameStackshramik"
+                android:layout_height="@dimen/_389pxv" android:layout_width="match_parent">
+                <LinearLayout android:id="@+id/linearColumnshramik"
+                    android:layout_gravity="top|start"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_10pxv"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical" style="@style/groupStylecornerRadius">
+                    <TextView android:ellipsize="end"
+                        android:gravity="center_horizontal"
+                        android:id="@+id/txtSHRAMIK"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="@dimen/_158pxv"
+                        android:layout_marginEnd="@dimen/_119pxh"
+                        android:layout_marginStart="@dimen/_119pxh"
+                        android:layout_marginTop="@dimen/_76pxv"
+                        android:layout_width="match_parent"
+                        android:lineSpacingExtra="@dimen/_7pxh"
+                        android:singleLine="true"
+                        style="@style/txt"
+                        android:text="@string/lbl_shramik"/>
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="208dp"
+                    android:layout_height="202dp"
+                    android:layout_gravity="bottom|center"
+                    android:layout_marginStart="@dimen/_111pxh"
+                    android:layout_marginTop="@dimen/_10pxv"
+                    android:layout_marginEnd="@dimen/_111pxh"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/img_ellipse1"
+                    tools:ignore="ContentDescription" />
+            </FrameLayout>
+<!--            <ImageView-->
+<!--                android:id="@+id/gif_worker"-->
+<!--                android:layout_height="@dimen/_400pxh"-->
+<!--                android:layout_marginEnd="@dimen/_10pxh"-->
+<!--                android:layout_marginTop="@dimen/_16pxv"-->
+<!--                android:layout_width="@dimen/_403pxh"-->
+<!--                android:scaleType="fitXY"-->
+<!--                tools:ignore="ContentDescription"-->
+<!--                android:src="@drawable/img_httpslottief"-->
+<!--                />-->
+
+            <pl.droidsonroids.gif.GifImageView
+                android:id="@+id/gif_worker"
+                android:layout_width="wrap_content"
+                android:layout_height="400dp"
+                android:layout_marginTop="@dimen/_16pxv"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:background="@color/white"
+                android:scaleType="fitXY"
+                android:src="@drawable/animation_500_li7dva49"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:id="@+id/txtShramikMakean"
+                style="@style/txtCabinCondensedregular32"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_66pxh"
+                android:layout_marginTop="@dimen/_18pxv"
+                android:layout_marginEnd="@dimen/_66pxh"
+                android:layout_marginBottom="@dimen/_8pxv"
+                android:ellipsize="end"
+                android:gravity="center_horizontal"
+                android:lineSpacingExtra="@dimen/_7pxh"
+                android:singleLine="true"
+                android:text="@string/msg_shramik_make_an" />
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
